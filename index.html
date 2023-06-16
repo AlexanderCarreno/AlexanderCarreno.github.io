@@ -1,13 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Carreno | Github</title>
-</head>
-<body>
-    <h1>Alexander Carreno Correa</h1>
-    <p>Welcome to my website!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+<html>
+  <head>
+    <title>Cheat Sheet</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="banner"></div>
+
+      <div class="title">
+        <h1>A personal Cheat Sheet</h1>
+        <p>by Alexander Carreno</p>
+      </div>
+    </header>
+
+    <main class="box">
+      <div class="box-container">
+        <div class="row content">
+          <div class="introduction">
+            <section>
+              <!--
+                HTML Tables
+                Other HTML tags
+                CSS selectors and specificity
+                Common CSS properties
+              -->
+              <article>
+                <h2>HTML cheats</h2>
+                <p>
+                  HTML tables are elements within web design that allow web
+                  developers to organize data such as text, images, and links in
+                  rows and columns.
+                </p>
+                <br />
+                <table>
+                  <tr>
+                    <th colspan="3">School teams</th>
+                  </tr>
+                  <tr>
+                    <th>Hawks</th>
+                    <th>Celtics</th>
+                    <th>Bulls</th>
+                  </tr>
+                  <tr>
+                    <td>Trae Young</td>
+                    <td>Jayson Tatum</td>
+                    <td>Patrick Beverley</td>
+                  </tr>
+                  <tr>
+                    <td>John Collins</td>
+                    <td>Al Horford</td>
+                    <td>Alex Caruso</td>
+                  </tr>
+                  <tr>
+                    <td>Dejounte Murray</td>
+                    <td>Robert Williams</td>
+                    <td>Zach LaVine</td>
+                  </tr>
+                </table>
+                <br>
+
+                <p>Awesome! table above contains the following html tags, please notice that some columns are wraping another, check the HTML code</p>
+                <br>
+                <pre>
+                  <code>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th colspan="3"&gt;School teams&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Hawks&lt;/th&gt;
+    &lt;th&gt;Celtics&lt;/th&gt;
+    &lt;th&gt;Bulls&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Trae Young&lt;/td&gt;
+    &lt;td&gt;Jayson Tatum&lt;/td&gt;
+    &lt;td&gt;Patrick Beverley&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John Collins&lt;/td&gt;
+    &lt;td&gt;Al Horford&lt;/td&gt;
+    &lt;td&gt;Alex Caruso&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Dejounte Murray&lt;/td&gt;
+    &lt;td&gt;Robert Williams&lt;/td&gt;
+    &lt;td&gt;Zach LaVine&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+                  </code>
+                </pre>
+              </article>
+            </section>
+          </div>
+        </div>
+        <div class="row footer">
+          <p>footer (fixed height)</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

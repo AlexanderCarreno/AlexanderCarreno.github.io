@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+  }
+  
+  html, body{
+    height: 100%;
+    margin: 0;
+  }
+
+  table, th, td {
+    border:3px solid black;
+  }
+
+  pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: inline-block;
+    padding: 20px;
+    color: black;
+  }
+
+  
+  .box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  
+  .box-container {
+    display: contents;
+  }
+  
+  .box .row.content {
+    flex: 1 1 auto;
+    background: hsl(190, 10%, 25%);
+  }
+  
+  .banner {
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2021/05/31/the-great-wave--minimalist-wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+  }
+  
+  .title {
+    background: #000;
+    color: hsl(0, 0%, 80%);
+    padding: 25px 80px;
+    font-family: sans-serif;
+  }
+  
+  .introduction {
+    color: hsl(0, 0%, 80%);;
+    display: content;
+    margin: 50px 80px;
+    font-family: sans-serif;
+  }
