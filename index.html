@@ -19,15 +19,19 @@
       <div class="box-container">
         <div class="row content">
           <div class="introduction">
-            <section>
-              <!--
+            <!--
                 HTML Tables
                 Other HTML tags
                 CSS selectors and specificity
                 Common CSS properties
               -->
+
+            <section>
+              <h2>HTML cheats</h2>
+
+              <!--HTML Tables-->
               <article>
-                <h2>HTML cheats</h2>
+                <h3>HTML Tables</h3>
                 <p>
                   HTML tables are elements within web design that allow web
                   developers to organize data such as text, images, and links in
@@ -59,12 +63,15 @@
                     <td>Zach LaVine</td>
                   </tr>
                 </table>
-                <br>
+                <br />
 
-                <p>Awesome! table above contains the following html tags, please notice that some columns are wraping another, check the HTML code</p>
-                <br>
+                <p>
+                  Awesome! table above contains the following html tags, please
+                  notice that some columns are wraping another, check the HTML
+                  code
+                </p>
                 <pre>
-                  <code>
+  <code>
 &lt;table&gt;
   &lt;tr&gt;
     &lt;th colspan="3"&gt;School teams&lt;/th&gt;
@@ -90,14 +97,188 @@
     &lt;td&gt;Zach LaVine&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
-                  </code>
-                </pre>
+  </code>
+</pre>
+              </article>
+
+              <!-- HTML Input auto-completed -->
+              <article class="subarticle">
+                <h3>Auto completed input</h3>
+                <p>
+                  The input below you can write in it and the input will
+                  auto-complete your string
+                </p>
+                <br />
+                <form action="" method="GET">
+                  <label for="car-make">Choose a car make:</label>
+                  <input
+                    list="car-makes"
+                    id="car-make"
+                    name="car-makes"
+                    placeholder="Select make.."
+                  />
+                  <datalist id="car-makes">
+                    <option value="BMW"></option>
+                    <option value="Tesla"></option>
+                    <option value="Toyota"></option>
+                    <option value="Volkswaggon"></option>
+                    <option value="Mazda"></option>
+                  </datalist>
+                </form>
+
+                <p>Here is the code 😉:</p>
+                <pre>
+  <code>
+&lt;form action="" method="GET"&gt;
+  &lt;label for="car-make"&gt;Choose a car make:&lt;/label&gt;
+  &lt;input
+    list="car-makes"
+    id="car-make"
+    name="car-makes"
+    placeholder="Select make.."
+  /&gt;
+  &lt;datalist id="car-makes"&gt;
+    &lt;option value="BMW"&gt;&lt;/option&gt;
+    &lt;option value="Tesla"&gt;&lt;/option&gt;
+    &lt;option value="Toyota"&gt;&lt;/option&gt;
+    &lt;option value="Volkswaggon"&gt;&lt;/option&gt;
+    &lt;option value="Mazda"&gt;&lt;/option&gt;
+  &lt;/datalist&gt;
+&lt;/form&gt;
+  </code>
+</pre>
+              </article>
+
+              <!-- HTML Calendar -->
+              <article class="subarticle">
+                <h3>Calendar in HTML</h3>
+                <p>
+                  A calendar for your HTML without javascript and without extra
+                  libraries , by the way, its very easy, click in the calendar
+                  icon
+                </p>
+                <br />
+                <input type="date" value="2017-06-01" />
+                <p>Here is the code 😉:</p>
+                <pre>
+  <code>
+&lt;input type="date" value="2017-06-01" /&gt;
+  </code>
+</pre>
+              </article>
+            </section>
+
+            <section class="subsections">
+              <h2>CSS Selectors cheats</h2>
+
+              <article>
+                <h3>Selects all in your page</h3>
+                <p>
+                  This will help you to select all the elements, this helps to
+                  set a initial attributes like margin and padding
+                </p>
+<pre>
+  <code>
+* {
+    margin: 0;
+    padding: 0;
+  }
+  </code>
+</pre>
+              </article>
+
+
+              <article>
+                <h3>Create animation when a mouse pass over a object</h3>
+                <p>You can pass a mouse over the image and will be animated</p>
+                <br>
+                <div class="flip-card" tabIndex="0">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3>Hover, please!</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Whoaaa!!!</h3>
+                    </div>
+                  </div>
+                </div>
+                <p>Here is the code 😉:</p>
+<pre>
+  <code>
+
+    &lt;div class="flip-card" tabIndex="0"&gt;
+      &lt;div class="flip-card-inner"&gt;
+        &lt;div class="flip-card-front"&gt;
+          &lt;h3&gt;Hover, please!&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class="flip-card-back"&gt;
+          &lt;h3&gt;Whoaaa!!!&lt;/h3&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+    }
+    
+    .flip-card:focus {
+        outline: 0;
+    }
+    
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus .flip-card-inner{
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .flip-card-front {
+      background: linear-gradient(to left, #4364f7, #6fb1fc);
+      color: black;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .flip-card-back {
+      background: linear-gradient(to right, #4364f7, #6fb1fc);
+      color: white;
+      transform: rotateY(180deg);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </code>
+</pre>
               </article>
             </section>
           </div>
         </div>
         <div class="row footer">
-          <p>footer (fixed height)</p>
+          <p>2022 | Cheat Sheet by Alexander Carreno Correa</p>
         </div>
       </div>
     </main>
