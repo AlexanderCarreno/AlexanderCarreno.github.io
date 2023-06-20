@@ -10,7 +10,7 @@
       <div class="banner"></div>
 
       <div class="title">
-        <h1>A personal Cheat Sheet</h1>
+        <h1>A Personal Cheat Sheet</h1>
         <p>by Alexander Carreno</p>
       </div>
     </header>
@@ -37,7 +37,44 @@
                   developers to organize data such as text, images, and links in
                   rows and columns.
                 </p>
-                <br />
+                <p>Explanation about the tags in the table:</p>
+                
+                <table class="cheat">
+                  <thead>
+                    <tr>
+                      <th>Tags</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Declare a table into HTML</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Declare a row in a table</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Declare a table column title</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Declare the row header</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Declare a cell/data in the table</td>
+                  </tr>
+                </table>
+                
+                <br>
+                <p>
+                  Awesome! table below contains the following html tags, please
+                  notice that some columns are wraping another, check the HTML
+                  code
+                </p>
+                <br>
                 <table>
                   <tr>
                     <th colspan="3">School teams</th>
@@ -64,12 +101,6 @@
                   </tr>
                 </table>
                 <br />
-
-                <p>
-                  Awesome! table above contains the following html tags, please
-                  notice that some columns are wraping another, check the HTML
-                  code
-                </p>
                 <pre>
   <code>
 &lt;table&gt;
@@ -177,7 +208,7 @@
                   This will help you to select all the elements, this helps to
                   set a initial attributes like margin and padding
                 </p>
-<pre>
+                <pre>
   <code>
 * {
     margin: 0;
@@ -187,12 +218,11 @@
 </pre>
               </article>
 
-
-              <article>
+              <article class="subarticle">
                 <h3>Create animation when a mouse pass over a object</h3>
                 <p>You can pass a mouse over the image and will be animated</p>
-                <br>
-                <div class="flip-card" tabIndex="0">
+                <br />
+                <div class="flip-card" tabindex="0">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
                       <h3>Hover, please!</h3>
@@ -203,7 +233,7 @@
                   </div>
                 </div>
                 <p>Here is the code 😉:</p>
-<pre>
+                <pre>
   <code>
 
     &lt;div class="flip-card" tabIndex="0"&gt;

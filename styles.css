@@ -12,10 +12,42 @@
   h2 {
     font-size: 40px;
     margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-weight: bold;
+    color: hsl(0, 0%, 80%);
+  }
+  
+
+  /* Table styles */
+  table, th, td {
+    border:1px solid black;
   }
 
-  table, th, td {
-    border:3px solid black;
+  table.cheat  {
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    text-align: center;
+	  vertical-align: middle;
+  }
+  
+  .cheat td, th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  .cheat thead th {
+    width: 25%;
+  }
+
+  .cheat thead {
+    background-color: hsl(220, 16%, 22%);
+    color: whitesmoke;
   }
 
   pre {
@@ -104,7 +136,7 @@
   
   .box .row.content {
     flex: 1 1 auto;
-    background: hsl(191, 25%, 30%);
+    background: #647c84;
   }
   
   .banner {
@@ -124,19 +156,19 @@
   .introduction {
     color: hsl(0, 0%, 80%);;
     display: content;
-    margin: 50px 200px;
+    margin: 50px 150px;
     font-family: sans-serif;
   }
 
   .footer {
-    background-color:hsl(10, 18%, 35%);
+    background-color:hsl(0, 0%, 0%);
     color: whitesmoke;
     text-align: center;
     padding: 10px;
   }
 
   .subarticle {
-    margin-top: 60px;
+    margin-top: 150px;
   }
 
   .subsections {
